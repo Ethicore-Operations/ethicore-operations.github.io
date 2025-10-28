@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ethicore Operations — Firm. Fair. Compliant.</title>
+  <meta name="description" content="Enforcement with integrity — firm, fair and compliant." />
+  <meta name="theme-color" content="#0B1C2E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <!-- Favicon built from brand shield -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230B1C2E'/%3E%3Cpath d='M20 16h24c2 0 4 1.6 4 3.6V34c0 10.3-8 18.5-16 20-8-1.5-16-9.7-16-20V19.6C16 17.6 18 16 20 16zm6 8h20v4H26v-4zm0 8h16v4H26v-4zm0 8h10v4H26v-4z' fill='%2352C3B8'/%3E%3C/svg%3E" />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Open Graph / Twitter (optional but helpful) -->
+  <meta property="og:title" content="Ethicore Operations" />
+  <meta property="og:description" content="Enforcement with integrity — firm, fair and compliant." />
+  <meta property="og:type" content="website" />
+
+  <!-- Minimal, accessible styles -->
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #0B1C2E; /* ink */
+      --muted: #5a6a7b;
+      --accent: #52C3B8; /* trust teal */
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg:#0b0b0b; --fg:#f5f5f5; --muted:#b0b0b0; --accent:#52C3B8; }
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      display: grid;
+      place-items: center;
+    }
+    main {
+      width: 100%;
+      max-width: 720px;
+      padding: 6rem 2rem;
+      text-align: center;
+    }
+    h1 {
+      font-size: clamp(2rem, 6vw, 3rem);
+      margin: 0 0 .75rem;
+      letter-spacing: -0.02em;
+    }
+    p.tagline {
+      margin: 0 0 2rem;
+      font-size: clamp(1rem, 2.5vw, 1.25rem);
+      color: var(--muted);
+    }
+    a.button {
+      display: inline-block;
+      padding: .85rem 1.1rem;
+      border-radius: 999px;
+      border: 1px solid color-mix(in oklab, var(--accent), #000 20%);
+      text-decoration: none;
+      color: #0B1C2E;
+      background: var(--accent);
+      font-weight: 600;
+    }
+    a.button:focus, a.button:hover { filter: brightness(1.05); }
+    footer { margin-top: 2rem; font-size: .9rem; color: var(--muted); }
+    .sr-only { position: absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip: rect(0,0,0,0); border:0; }
+  </style>
+
+  <!-- Structured data for better search appearance (minimal) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Ethicore Operations",
+    "email": "contact@ethicoreoperations.co.uk"
+  }
+  </script>
+</head>
+<body>
+  <main>
+    <h1>Ethicore Operations</h1>
+    <p class="tagline">Enforcement with integrity — Firm. Fair. Compliant.</p>
+
+    <p>
+      <a class="button" href="mailto:contact@ethicoreoperations.co.uk" aria-label="Email Ethicore Operations">
+        contact@ethicoreoperations.co.uk
+      </a>
+    </p>
+
+    <footer>
+      <span>© <span id="year"></span> Ethicore Operations</span>
+    </footer>
+  </main>
+
+  <script>
+    // Keep the year current without build tooling
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
