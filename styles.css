@@ -17,7 +17,7 @@ img {
 /* LAYOUT */
 .container {
     width: 90%;
-    max-width: 1100px;
+    max-width: 1200px;
     margin: auto;
     padding: 60px 0;
 }
@@ -31,20 +31,21 @@ header {
     z-index: 100;
 }
 
-/* HEADER SPACING FIX */
+/* HEADER SPACING */
 header .container {
-    padding: 15px 0;
+    padding: 20px 0;
 }
 
+/* NAVIGATION */
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-/* LOGO (FIXED + BALANCED) */
+/* LOGO (UPGRADED) */
 .logo {
-    height: 55px;
+    height: 70px;
     width: auto;
 }
 
@@ -56,9 +57,10 @@ nav {
 /* NAV LINKS */
 nav a {
     color: #F4F6F8;
-    margin-left: 25px;
+    margin-left: 30px;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 15px;
+    font-weight: 500;
 }
 
 nav a:hover {
@@ -67,7 +69,7 @@ nav a:hover {
 
 /* HERO */
 .hero {
-    padding: 100px 0 80px 0;
+    padding: 120px 0 100px 0;
     background: linear-gradient(rgba(30,42,56,0.9), rgba(30,42,56,0.95)),
                 url('/images/enforcement-bg.jpg');
     background-size: cover;
@@ -76,7 +78,8 @@ nav a:hover {
 
 .hero h1 {
     font-family: Poppins, sans-serif;
-    font-size: 42px;
+    font-size: 48px;
+    line-height: 1.2;
     margin-bottom: 20px;
 }
 
@@ -99,7 +102,8 @@ nav a:hover {
 /* HEADINGS */
 .section h2 {
     font-family: Poppins, sans-serif;
-    font-size: 28px;
+    font-size: 30px;
+    margin-bottom: 10px;
 }
 
 .section p {
@@ -118,13 +122,14 @@ ul li {
 /* BUTTONS */
 .button {
     display: inline-block;
-    padding: 12px 22px;
+    padding: 14px 26px;
     background: #F26419;
     color: #ffffff;
     text-decoration: none;
     margin-top: 20px;
     border-radius: 4px;
     font-weight: 600;
+    font-size: 15px;
 }
 
 .button:hover {
@@ -135,7 +140,7 @@ ul li {
 .card {
     background: #223140;
     border: 1px solid #4A5A63;
-    padding: 25px;
+    padding: 30px;
     border-radius: 6px;
     margin-top: 20px;
 }
