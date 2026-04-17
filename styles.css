@@ -158,3 +158,31 @@ ul li {
     border-top: 1px solid #4A5A63;
     font-size: 14px;
 }
+/* GRID LAYOUTS */
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+/* CARD IMPROVEMENT */
+.card {
+    background: #223140;
+    border: 1px solid #4A5A63;
+    padding: 30px;
+    border-radius: 6px;
+    margin-top: 20px;
+    height: 100%;
+}
+
+/* SMALL TEXT */
+.small {
+    color: #cbd5db;
+    font-size: 14px;
+}
